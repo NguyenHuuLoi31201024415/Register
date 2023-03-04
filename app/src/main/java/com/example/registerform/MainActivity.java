@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText edtName;
     private EditText edtPhone;
     private EditText edtAge;
-    private CheckBox cbxSex;
+    private Switch cbxSex;
     private CheckBox cbxSport;
     private RadioGroup radGr;
     private RadioButton rad_btn;
@@ -34,9 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         edtName = findViewById(R.id.edt_name);
         edtPhone = findViewById(R.id.edt_phone);
-//        edtAge = findViewById(R.id.edt_age);
         seekBar = findViewById(R.id.seekBarAge);
-        cbxSex =(CheckBox) findViewById(R.id.cbx_sex);
+        cbxSex = (Switch) findViewById(R.id.cbx_sex);
         cbxSport =(CheckBox) findViewById(R.id.cbx_sport);
         radGr = (RadioGroup) findViewById(R.id.rad_gr);
         btnRgister = (Button) findViewById(R.id.btn_register);
